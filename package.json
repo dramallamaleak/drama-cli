@@ -1,0 +1,11 @@
+{
+  "name": "dramallama",
+  "version": "1.0.0",
+  "description": "Detect memory leaks in your Jest tests",
+  "main": "index.js",
+  "author": "Alexey Kureev <a.g.kureev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.1"
+  }
+}

@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc",
     "pretest": "yarn build",
-    "test": "jest --runInBand --logHeapUsage"
+    "test": "node --expose-gc node_modules/.bin/jest --runInBand --logHeapUsage"
   },
   "jest": {
     "testEnvironment": "node",

@@ -1,4 +1,4 @@
-const Sequencer = require("@jest/test-sequencer").default;
+import Sequencer from "@jest/test-sequencer";
 import { Test } from "jest-runner";
 
 class CustomSequencer extends Sequencer {

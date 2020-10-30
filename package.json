@@ -1,23 +1,25 @@
 {
-  "name": "dramallama",
-  "version": "1.0.0",
+  "name": "no-drama",
+  "version": "0.1.5",
   "description": "Detect memory leaks in your Jest tests",
-  "main": "dist/index.js",
+  "bin": "dist/cli.js",
+  "main": "dist/cli.js",
   "author": "Alexey Kureev <a.g.kureev@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^26.0.15",
-    "jest": "^26.6.1",
-    "jest-runner": "^26.6.1",
-    "typescript": "^4.0.5"
+  "dependencies": {
+    "jest": "^26.6.1"
   },
   "scripts": {
     "build": "tsc",
     "pretest": "yarn build",
-    "test": "node --expose-gc node_modules/.bin/jest --runInBand --logHeapUsage"
+    "test": "node --expose-gc dist/cli.js"
   },
   "jest": {
     "testEnvironment": "node",
-    "testSequencer": "./dist/index.js"
+    "testSequencer": "./dist/sequencer.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "typescript": "^4.0.5"
   }
 }

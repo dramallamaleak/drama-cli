@@ -2,12 +2,13 @@
   "include": ["src/**/*.ts"],
   "compilerOptions": {
     "module": "commonjs",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "target": "ES6",
+    "target": "es2017",
     "outDir": "dist",
-    "sourceMap": true,
+    "sourceMap": false,
     "strict": true
   }
 }

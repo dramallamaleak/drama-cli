@@ -3,6 +3,7 @@
 import * as path from "path";
 import * as parseArgs from "minimist";
 import { run } from "jest";
+import { EnvStorage } from "./EnvStorage";
 
 const config = {
   testSequencer: path.join(__dirname, "sequencer.js"),
@@ -10,7 +11,7 @@ const config = {
 
 let argv = parseArgs(process.argv.slice(2));
 if (argv.count) {
-  process.env.count = argv.count;
+  EnvStorage.set("count", argv.count);
   delete argv.count;
 }
 

@@ -9,9 +9,9 @@ const config = {
 };
 
 let argv = parseArgs(process.argv.slice(2));
-if (argv.cnt) {
-  process.env.cnt = argv.cnt;
-  delete argv.cnt;
+if (argv.count) {
+  process.env.count = argv.count;
+  delete argv.count;
 }
 
 let args: string[] = [];

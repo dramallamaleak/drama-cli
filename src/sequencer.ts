@@ -3,7 +3,7 @@ import { Test } from "jest-runner";
 
 class NoDramaSequencer extends Sequencer {
   sort(tests: Test[]): Test[] {
-    return new Array(10).fill(tests[0]);
+    return new Array(Number(process.env.count) || 10).fill(tests[0]);
   }
 }
 

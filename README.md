@@ -10,6 +10,18 @@ There is no installation required. You can run
 $ npx no-drama path/to/jest/test
 ```
 
+But if you still want to add `no-drama` CLI to your project, you can add it by using `npm`
+
+```bash
+$ npm install no-drama --save-dev
+```
+
+or using `yarn`
+
+```bash
+$ yarn add no-drama --dev
+```
+
 ### Additional parameters
 
 #### `count`

@@ -5,6 +5,9 @@
   "bin": "dist/cli.js",
   "main": "dist/cli.js",
   "author": "Alexey Kureev <a.g.kureev@gmail.com>",
+  "contributors": [
+    "Vladislava Rau <rauvladislava@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "@types/minimist": "^1.2.0",
